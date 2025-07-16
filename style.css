@@ -1,0 +1,88 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'JetBrains Mono', monospace;
+  background: #000;
+  color: #00ff90;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menuToggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #00ff90;
+}
+
+#mobileMenu {
+  display: flex;
+  gap: 1rem;
+}
+
+#mobileMenu a {
+  color: #00ff90;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#mobileMenu a:hover {
+  color: #1a73e8;
+}
+
+main {
+  padding: 8rem 2rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  #menuToggle {
+    display: block;
+  }
+
+  #mobileMenu {
+    flex-direction: column;
+    display: none;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 1rem;
+    border: 1px solid #00ff90;
+  }
+
+  #mobileMenu.active {
+    display: flex;
+  }
+}

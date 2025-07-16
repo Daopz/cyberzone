@@ -4,30 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CyberZone</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <canvas id="matrixCanvas"></canvas>
   <header>
-    <div class="logo">CyberZone</div>
-    <button id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-      ☰
-    </button>
-    <nav id="mobileMenu" role="navigation">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>&gt; Bienvenido a CyberZone</h1>
+      <button id="menuToggle">&#9776;</button>
+      <nav id="mobileMenu">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section id="inicio"><h1>Bienvenido a CyberZone</h1></section>
-    <section id="sobre"><h2>Sobre mí</h2></section>
-    <section id="proyectos"><h2>Proyectos</h2></section>
-    <section id="contacto"><h2>Contacto</h2></section>
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>Hack the planet. Entusiasta de la ciberseguridad y el código libre.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <ul>
+        <li>💾 Análisis de malware en entornos aislados</li>
+        <li>🧠 Modelos IA para defensa activa</li>
+        <li>🌐 Redes anónimas con Tor + VPN + Proxychains</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:hack@cyberzone.dev">hack@cyberzone.dev</a></p>
+    </section>
   </main>
-  <script src="script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
